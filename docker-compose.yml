@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+
+  node_app:
+    container_name: node.dev.microsoft.graph
+    volumes:
+    - ./app:/var/www/html/app/
+    build:
+      #context: ./dockerfiles/
+      context: ./
+      dockerfile: ./dockerfiles/node.dockerfile.sh
+
+    image: cntmedia/node-microsoft-graph:1.0.0
+    expose:
+      - 8080
+      - 3000
+    ports:
+      - 80:3000
+      - 8080:8080
+
+    command: npm start

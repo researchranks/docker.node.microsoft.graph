@@ -1,0 +1,13 @@
+{
+  "name": "google_appscript.dev",
+  "version": "0.0.1",
+  "main": "server.js",
+  "author": "cntmedia",
+  "description": "docker workflow for google appscript developement",
+  "private": true,
+  "scripts": {
+      "start": "node index.js"
+  },
+  "dependencies": {
+  }
+}
